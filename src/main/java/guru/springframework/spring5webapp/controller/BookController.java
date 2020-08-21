@@ -20,7 +20,7 @@ public class BookController {
 	public String getBooks(Model model) {
 		model.addAttribute("books", bookRepository.findAll());
 		//Look for the template book inside of books
-		return "books";
+		return "books/list";
 	}
 	
 }
